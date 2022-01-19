@@ -1,0 +1,83 @@
+@media (min-width: 991px)
+  .about-wrap__text
+    animation-name: about-wrap__text
+    animation-duration: .75s
+    animation-delay: .75s
+    animation-direction: reverse
+  .main__about
+    animation-name: main__about
+    animation-duration: .75s
+    animation-delay: .5s
+    animation-direction: reverse
+  .about__item--tech
+    animation: about__item--tech .75s ease 1s 1 reverse
+  .about__item--land
+    animation: about__item--land 1s ease 1s 1 reverse
+  .about__item--eval
+    animation: about__item--eval 1.5s ease 1s 1 reverse
+  .header-number__icon
+    animation: header-number__icon 5s ease 1s infinite normal
+  .header-navi__icon
+    animation: header-navi__icon 5s linear 1.5s infinite normal
+
+  // @keyframes main-col__title
+  //   0%
+  //     transform: translateX(0)
+  //   100%
+  //     transform: translateX(-200px) rotate(90deg)
+  //     opacity: 0
+  //     color: black
+
+  @keyframes main__about
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateX(200px)
+      opacity: 0
+      
+  @keyframes about-wrap__text
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateY(200px)
+      opacity: 0
+      
+  @keyframes about__item--tech
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateX(150px)
+      opacity: 0    
+  @keyframes about__item--land
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateX(150px)
+      opacity: 0    
+  @keyframes about__item--eval
+    0%
+      transform: translateX(0)
+    100%
+      transform: translateX(150px)
+      opacity: 0
+
+  @keyframes header-number__icon
+    0%
+      transform: rotate(0)
+    5%
+      transform: rotate(45deg)
+    10%
+      transform: rotate(-45deg)
+    20%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(0deg)
+  @keyframes header-navi__icon
+    0%
+      transform: scale(1)
+    5%
+      transform: scale(0.9)
+    10%
+      transform: scale(1.2)
+    20%
+      transform: scale(1)

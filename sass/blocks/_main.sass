@@ -1,0 +1,100 @@
+.main
+  background-color: #1F090E
+  &__row
+    display: flex
+    position: relative
+    z-index: 0
+  &__col
+    max-width: 700px
+    padding-top: 41px
+  &-col
+    &__title
+      text-transform: uppercase
+      font-size: 30px
+      line-height: 40px
+      &-strong
+        display: inline-block
+        margin-bottom: 10px
+        font-size: 93px
+        line-height: 100px
+        color: $gold
+    &__stages
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 57px
+      margin-left: -7px
+    &__span
+      font-size: 30px
+      line-height: 40px
+      color: $gold
+      &-block
+        display: flex
+        margin-bottom: 28px
+    &__circle
+      position: relative
+      content: ''
+      transform: translate(0%, 100%)
+      margin-right: 16px
+      width: 16px
+      height: 16px
+      background-color: $gold
+      border-radius: 50%
+      &::after
+        position: absolute
+        content: ''
+        background-color: $gold
+        width: 1px
+        height: 55px
+        top: 100%
+        left: 50% 
+      &--last
+        &::after
+          height: 100px
+    &__btn
+      padding: 21px 75px
+      text-transform: uppercase
+      font-size: 25px
+      border-radius: 100px
+      background-color: $gold
+      &-block
+        z-index: 0
+        position: relative
+        margin-top: 27px
+        margin-left: 125px
+        &::before
+          position: absolute
+          content: '' 
+          background-color: $gold
+          width: 32%
+          height: 1px
+          transform: translate(0%, 100%)
+          left: -117px
+          top: 50%
+          z-index: -1
+  &__img
+    margin-top: 13px
+    margin-left: -30px
+  &__about
+    width: 32vw
+    max-height: 120px
+    position: absolute
+    top: 16%
+    right: 0
+    font-size: 16px
+    line-height: 25px
+  &-about
+    // &::after
+    //   content: ""
+    //   position: absolute
+    //   margin-bottom: 10px
+    //   height: 2px
+    //   background-color: red
+    //   width: 100vw
+    &__name
+      margin: 0
+      padding-bottom: 3px
+      border-bottom: 1px solid $gold
+      margin-bottom: 13px
+    &__post
+      color: $gold
