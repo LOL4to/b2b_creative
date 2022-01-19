@@ -8,18 +8,6 @@ $(document).ready(function () {
 		document.body.classList.toggle("body--visible");
 	});
 
-	// Получение элемента canvas, контекста и свойства Math.PI
-	let canvas = document.getElementById("myCanvas");
-	let ctx = canvas.getContext("2d");
-	let pi = Math.PI;
-
-	ctx.beginPath(); // начало нового пути
-	ctx.lineWidth = 3; // толщина обводки
-	ctx.fillStyle = "transparent";
-	ctx.strokeStyle = "#bf9037"; // цвет обводки
-	// Координаты центра круга, радиус, начальный угол, конечный угол, направление по часовой стрелке
-	ctx.arc(330, 330, 328, 0, 1.5 * pi, false);
-	ctx.stroke();
 
 	//--------------- Вызов модального окна ---------------//
 
@@ -97,13 +85,25 @@ $(document).ready(function () {
 				},
 			},
 		});
-	});
+	}); 
 	var phone = $('input[name="phone"]');
 	$(phone).mask("+7(999) 999-99-99", {
 		completed: function () {
 			alert("Вы ввели номер телефона: " + this.val());
 		},
 	});
+	// Получение элемента canvas, контекста и свойства Math.PI
+	let canvas = document.getElementById("myCanvas");
+	let ctx = canvas.getContext("2d");
+	let pi = Math.PI;
+
+	ctx.beginPath(); // начало нового пути
+	ctx.lineWidth = 3; // толщина обводки 
+	ctx.fillStyle = "transparent";
+	ctx.strokeStyle = "#bf9037"; // цвет обводки
+	// Координаты центра круга, радиус, начальный угол, конечный угол, направление по часовой стрелке
+	ctx.arc(330, 330, 328, 0, 1.5 * pi, false);
+	ctx.stroke();
 	//-------------------------------------------//
 	AOS.init();
 });
